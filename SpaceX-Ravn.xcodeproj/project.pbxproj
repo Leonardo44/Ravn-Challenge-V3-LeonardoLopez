@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B3B5EE432B1973B6007CB725 /* SpaceX_RavnApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B5EE422B1973B6007CB725 /* SpaceX_RavnApp.swift */; };
+		B3B5EE452B1973B6007CB725 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B5EE442B1973B6007CB725 /* ContentView.swift */; };
+		B3B5EE472B1973B8007CB725 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3B5EE462B1973B8007CB725 /* Assets.xcassets */; };
+		B3B5EE4A2B1973B8007CB725 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3B5EE492B1973B8007CB725 /* Preview Assets.xcassets */; };
+		B3B5EE542B1973B8007CB725 /* SpaceX_RavnTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B5EE532B1973B8007CB725 /* SpaceX_RavnTests.swift */; };
+		B3B5EE5E2B1973B8007CB725 /* SpaceX_RavnUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B5EE5D2B1973B8007CB725 /* SpaceX_RavnUITests.swift */; };
+		B3B5EE602B1973B8007CB725 /* SpaceX_RavnUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B5EE5F2B1973B8007CB725 /* SpaceX_RavnUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B3B5EE502B1973B8007CB725 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B3B5EE372B1973B6007CB725 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B3B5EE3E2B1973B6007CB725;
+			remoteInfo = "SpaceX-Ravn";
+		};
+		B3B5EE5A2B1973B8007CB725 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B3B5EE372B1973B6007CB725 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B3B5EE3E2B1973B6007CB725;
+			remoteInfo = "SpaceX-Ravn";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B3B5EE3F2B1973B6007CB725 /* SpaceX-Ravn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SpaceX-Ravn.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3B5EE422B1973B6007CB725 /* SpaceX_RavnApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceX_RavnApp.swift; sourceTree = "<group>"; };
+		B3B5EE442B1973B6007CB725 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B3B5EE462B1973B8007CB725 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B3B5EE492B1973B8007CB725 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B3B5EE4F2B1973B8007CB725 /* SpaceX-RavnTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SpaceX-RavnTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3B5EE532B1973B8007CB725 /* SpaceX_RavnTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceX_RavnTests.swift; sourceTree = "<group>"; };
+		B3B5EE592B1973B8007CB725 /* SpaceX-RavnUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SpaceX-RavnUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3B5EE5D2B1973B8007CB725 /* SpaceX_RavnUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceX_RavnUITests.swift; sourceTree = "<group>"; };
+		B3B5EE5F2B1973B8007CB725 /* SpaceX_RavnUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceX_RavnUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B3B5EE3C2B1973B6007CB725 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3B5EE4C2B1973B8007CB725 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3B5EE562B1973B8007CB725 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B3B5EE362B1973B6007CB725 = {
+			isa = PBXGroup;
+			children = (
+				B3B5EE412B1973B6007CB725 /* SpaceX-Ravn */,
+				B3B5EE522B1973B8007CB725 /* SpaceX-RavnTests */,
+				B3B5EE5C2B1973B8007CB725 /* SpaceX-RavnUITests */,
+				B3B5EE402B1973B6007CB725 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B3B5EE402B1973B6007CB725 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B3B5EE3F2B1973B6007CB725 /* SpaceX-Ravn.app */,
+				B3B5EE4F2B1973B8007CB725 /* SpaceX-RavnTests.xctest */,
+				B3B5EE592B1973B8007CB725 /* SpaceX-RavnUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B3B5EE412B1973B6007CB725 /* SpaceX-Ravn */ = {
+			isa = PBXGroup;
+			children = (
+				B3B5EE422B1973B6007CB725 /* SpaceX_RavnApp.swift */,
+				B3B5EE442B1973B6007CB725 /* ContentView.swift */,
+				B3B5EE462B1973B8007CB725 /* Assets.xcassets */,
+				B3B5EE482B1973B8007CB725 /* Preview Content */,
+			);
+			path = "SpaceX-Ravn";
+			sourceTree = "<group>";
+		};
+		B3B5EE482B1973B8007CB725 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B3B5EE492B1973B8007CB725 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B3B5EE522B1973B8007CB725 /* SpaceX-RavnTests */ = {
+			isa = PBXGroup;
+			children = (
+				B3B5EE532B1973B8007CB725 /* SpaceX_RavnTests.swift */,
+			);
+			path = "SpaceX-RavnTests";
+			sourceTree = "<group>";
+		};
+		B3B5EE5C2B1973B8007CB725 /* SpaceX-RavnUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B3B5EE5D2B1973B8007CB725 /* SpaceX_RavnUITests.swift */,
+				B3B5EE5F2B1973B8007CB725 /* SpaceX_RavnUITestsLaunchTests.swift */,
+			);
+			path = "SpaceX-RavnUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B3B5EE3E2B1973B6007CB725 /* SpaceX-Ravn */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3B5EE632B1973B8007CB725 /* Build configuration list for PBXNativeTarget "SpaceX-Ravn" */;
+			buildPhases = (
+				B3B5EE3B2B1973B6007CB725 /* Sources */,
+				B3B5EE3C2B1973B6007CB725 /* Frameworks */,
+				B3B5EE3D2B1973B6007CB725 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SpaceX-Ravn";
+			productName = "SpaceX-Ravn";
+			productReference = B3B5EE3F2B1973B6007CB725 /* SpaceX-Ravn.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B3B5EE4E2B1973B8007CB725 /* SpaceX-RavnTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3B5EE662B1973B8007CB725 /* Build configuration list for PBXNativeTarget "SpaceX-RavnTests" */;
+			buildPhases = (
+				B3B5EE4B2B1973B8007CB725 /* Sources */,
+				B3B5EE4C2B1973B8007CB725 /* Frameworks */,
+				B3B5EE4D2B1973B8007CB725 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B3B5EE512B1973B8007CB725 /* PBXTargetDependency */,
+			);
+			name = "SpaceX-RavnTests";
+			productName = "SpaceX-RavnTests";
+			productReference = B3B5EE4F2B1973B8007CB725 /* SpaceX-RavnTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B3B5EE582B1973B8007CB725 /* SpaceX-RavnUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3B5EE692B1973B8007CB725 /* Build configuration list for PBXNativeTarget "SpaceX-RavnUITests" */;
+			buildPhases = (
+				B3B5EE552B1973B8007CB725 /* Sources */,
+				B3B5EE562B1973B8007CB725 /* Frameworks */,
+				B3B5EE572B1973B8007CB725 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B3B5EE5B2B1973B8007CB725 /* PBXTargetDependency */,
+			);
+			name = "SpaceX-RavnUITests";
+			productName = "SpaceX-RavnUITests";
+			productReference = B3B5EE592B1973B8007CB725 /* SpaceX-RavnUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B3B5EE372B1973B6007CB725 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					B3B5EE3E2B1973B6007CB725 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					B3B5EE4E2B1973B8007CB725 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = B3B5EE3E2B1973B6007CB725;
+					};
+					B3B5EE582B1973B8007CB725 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = B3B5EE3E2B1973B6007CB725;
+					};
+				};
+			};
+			buildConfigurationList = B3B5EE3A2B1973B6007CB725 /* Build configuration list for PBXProject "SpaceX-Ravn" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B3B5EE362B1973B6007CB725;
+			productRefGroup = B3B5EE402B1973B6007CB725 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B3B5EE3E2B1973B6007CB725 /* SpaceX-Ravn */,
+				B3B5EE4E2B1973B8007CB725 /* SpaceX-RavnTests */,
+				B3B5EE582B1973B8007CB725 /* SpaceX-RavnUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B3B5EE3D2B1973B6007CB725 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3B5EE4A2B1973B8007CB725 /* Preview Assets.xcassets in Resources */,
+				B3B5EE472B1973B8007CB725 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3B5EE4D2B1973B8007CB725 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3B5EE572B1973B8007CB725 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B3B5EE3B2B1973B6007CB725 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3B5EE452B1973B6007CB725 /* ContentView.swift in Sources */,
+				B3B5EE432B1973B6007CB725 /* SpaceX_RavnApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3B5EE4B2B1973B8007CB725 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3B5EE542B1973B8007CB725 /* SpaceX_RavnTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3B5EE552B1973B8007CB725 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3B5EE5E2B1973B8007CB725 /* SpaceX_RavnUITests.swift in Sources */,
+				B3B5EE602B1973B8007CB725 /* SpaceX_RavnUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B3B5EE512B1973B8007CB725 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B3B5EE3E2B1973B6007CB725 /* SpaceX-Ravn */;
+			targetProxy = B3B5EE502B1973B8007CB725 /* PBXContainerItemProxy */;
+		};
+		B3B5EE5B2B1973B8007CB725 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B3B5EE3E2B1973B6007CB725 /* SpaceX-Ravn */;
+			targetProxy = B3B5EE5A2B1973B8007CB725 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B3B5EE612B1973B8007CB725 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B3B5EE622B1973B8007CB725 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B3B5EE642B1973B8007CB725 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SpaceX-Ravn/Preview Content\"";
+				DEVELOPMENT_TEAM = HKA6PJ3AC9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lopezleo.SpaceX-Ravn";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B3B5EE652B1973B8007CB725 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SpaceX-Ravn/Preview Content\"";
+				DEVELOPMENT_TEAM = HKA6PJ3AC9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lopezleo.SpaceX-Ravn";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B3B5EE672B1973B8007CB725 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HKA6PJ3AC9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lopezleo.SpaceX-RavnTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpaceX-Ravn.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SpaceX-Ravn";
+			};
+			name = Debug;
+		};
+		B3B5EE682B1973B8007CB725 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HKA6PJ3AC9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lopezleo.SpaceX-RavnTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpaceX-Ravn.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SpaceX-Ravn";
+			};
+			name = Release;
+		};
+		B3B5EE6A2B1973B8007CB725 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HKA6PJ3AC9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lopezleo.SpaceX-RavnUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "SpaceX-Ravn";
+			};
+			name = Debug;
+		};
+		B3B5EE6B2B1973B8007CB725 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HKA6PJ3AC9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lopezleo.SpaceX-RavnUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "SpaceX-Ravn";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B3B5EE3A2B1973B6007CB725 /* Build configuration list for PBXProject "SpaceX-Ravn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3B5EE612B1973B8007CB725 /* Debug */,
+				B3B5EE622B1973B8007CB725 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B3B5EE632B1973B8007CB725 /* Build configuration list for PBXNativeTarget "SpaceX-Ravn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3B5EE642B1973B8007CB725 /* Debug */,
+				B3B5EE652B1973B8007CB725 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B3B5EE662B1973B8007CB725 /* Build configuration list for PBXNativeTarget "SpaceX-RavnTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3B5EE672B1973B8007CB725 /* Debug */,
+				B3B5EE682B1973B8007CB725 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B3B5EE692B1973B8007CB725 /* Build configuration list for PBXNativeTarget "SpaceX-RavnUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3B5EE6A2B1973B8007CB725 /* Debug */,
+				B3B5EE6B2B1973B8007CB725 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B3B5EE372B1973B6007CB725 /* Project object */;
+}
