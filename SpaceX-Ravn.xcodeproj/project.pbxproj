@@ -8,12 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		B3B5EE432B1973B6007CB725 /* SpaceX_RavnApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B5EE422B1973B6007CB725 /* SpaceX_RavnApp.swift */; };
-		B3B5EE452B1973B6007CB725 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B5EE442B1973B6007CB725 /* ContentView.swift */; };
+		B3B5EE452B1973B6007CB725 /* MainSpacexRavnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B5EE442B1973B6007CB725 /* MainSpacexRavnView.swift */; };
 		B3B5EE472B1973B8007CB725 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3B5EE462B1973B8007CB725 /* Assets.xcassets */; };
 		B3B5EE4A2B1973B8007CB725 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3B5EE492B1973B8007CB725 /* Preview Assets.xcassets */; };
 		B3B5EE542B1973B8007CB725 /* SpaceX_RavnTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B5EE532B1973B8007CB725 /* SpaceX_RavnTests.swift */; };
 		B3B5EE5E2B1973B8007CB725 /* SpaceX_RavnUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B5EE5D2B1973B8007CB725 /* SpaceX_RavnUITests.swift */; };
 		B3B5EE602B1973B8007CB725 /* SpaceX_RavnUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B5EE5F2B1973B8007CB725 /* SpaceX_RavnUITestsLaunchTests.swift */; };
+		B3B5EE712B197695007CB725 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B5EE702B197695007CB725 /* MainCoordinator.swift */; };
+		B3B5EE752B197996007CB725 /* ListMissionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B5EE742B197996007CB725 /* ListMissionsView.swift */; };
+		B3B5EE782B1979B7007CB725 /* MissionDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B5EE772B1979B7007CB725 /* MissionDetailView.swift */; };
+		B3B5EE852B198EAD007CB725 /* MissionListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B5EE842B198EAD007CB725 /* MissionListItemView.swift */; };
+		B3B5EE8A2B1999D0007CB725 /* MissionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B5EE892B1999D0007CB725 /* MissionService.swift */; };
+		B3B5EE8C2B199A11007CB725 /* FetchMissionListUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B5EE8B2B199A11007CB725 /* FetchMissionListUseCase.swift */; };
+		B3B5EE8E2B199A22007CB725 /* FetchMissionDetailUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B5EE8D2B199A22007CB725 /* FetchMissionDetailUseCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +43,7 @@
 /* Begin PBXFileReference section */
 		B3B5EE3F2B1973B6007CB725 /* SpaceX-Ravn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SpaceX-Ravn.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3B5EE422B1973B6007CB725 /* SpaceX_RavnApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceX_RavnApp.swift; sourceTree = "<group>"; };
-		B3B5EE442B1973B6007CB725 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B3B5EE442B1973B6007CB725 /* MainSpacexRavnView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSpacexRavnView.swift; sourceTree = "<group>"; };
 		B3B5EE462B1973B8007CB725 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B3B5EE492B1973B8007CB725 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B3B5EE4F2B1973B8007CB725 /* SpaceX-RavnTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SpaceX-RavnTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +51,14 @@
 		B3B5EE592B1973B8007CB725 /* SpaceX-RavnUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SpaceX-RavnUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3B5EE5D2B1973B8007CB725 /* SpaceX_RavnUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceX_RavnUITests.swift; sourceTree = "<group>"; };
 		B3B5EE5F2B1973B8007CB725 /* SpaceX_RavnUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceX_RavnUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B3B5EE702B197695007CB725 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		B3B5EE742B197996007CB725 /* ListMissionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListMissionsView.swift; sourceTree = "<group>"; };
+		B3B5EE772B1979B7007CB725 /* MissionDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionDetailView.swift; sourceTree = "<group>"; };
+		B3B5EE842B198EAD007CB725 /* MissionListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionListItemView.swift; sourceTree = "<group>"; };
+		B3B5EE892B1999D0007CB725 /* MissionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionService.swift; sourceTree = "<group>"; };
+		B3B5EE8B2B199A11007CB725 /* FetchMissionListUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchMissionListUseCase.swift; sourceTree = "<group>"; };
+		B3B5EE8D2B199A22007CB725 /* FetchMissionDetailUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchMissionDetailUseCase.swift; sourceTree = "<group>"; };
+		B3B5EE8F2B19A541007CB725 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,9 +109,12 @@
 		B3B5EE412B1973B6007CB725 /* SpaceX-Ravn */ = {
 			isa = PBXGroup;
 			children = (
+				B3B5EE6E2B197668007CB725 /* Core */,
+				B3B5EE6D2B19762B007CB725 /* Ui */,
 				B3B5EE422B1973B6007CB725 /* SpaceX_RavnApp.swift */,
-				B3B5EE442B1973B6007CB725 /* ContentView.swift */,
+				B3B5EE442B1973B6007CB725 /* MainSpacexRavnView.swift */,
 				B3B5EE462B1973B8007CB725 /* Assets.xcassets */,
+				B3B5EE8F2B19A541007CB725 /* Info.plist */,
 				B3B5EE482B1973B8007CB725 /* Preview Content */,
 			);
 			path = "SpaceX-Ravn";
@@ -125,6 +143,67 @@
 				B3B5EE5F2B1973B8007CB725 /* SpaceX_RavnUITestsLaunchTests.swift */,
 			);
 			path = "SpaceX-RavnUITests";
+			sourceTree = "<group>";
+		};
+		B3B5EE6D2B19762B007CB725 /* Ui */ = {
+			isa = PBXGroup;
+			children = (
+				B3B5EE6F2B197682007CB725 /* Coordinator */,
+				B3B5EE762B1979A9007CB725 /* Mission Detail View */,
+				B3B5EE722B197979007CB725 /* List Missions View */,
+			);
+			path = Ui;
+			sourceTree = "<group>";
+		};
+		B3B5EE6E2B197668007CB725 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				B3B5EE882B1999C1007CB725 /* Service */,
+				B3B5EE872B1999BA007CB725 /* Use Case */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		B3B5EE6F2B197682007CB725 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				B3B5EE702B197695007CB725 /* MainCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		B3B5EE722B197979007CB725 /* List Missions View */ = {
+			isa = PBXGroup;
+			children = (
+				B3B5EE742B197996007CB725 /* ListMissionsView.swift */,
+				B3B5EE842B198EAD007CB725 /* MissionListItemView.swift */,
+			);
+			path = "List Missions View";
+			sourceTree = "<group>";
+		};
+		B3B5EE762B1979A9007CB725 /* Mission Detail View */ = {
+			isa = PBXGroup;
+			children = (
+				B3B5EE772B1979B7007CB725 /* MissionDetailView.swift */,
+			);
+			path = "Mission Detail View";
+			sourceTree = "<group>";
+		};
+		B3B5EE872B1999BA007CB725 /* Use Case */ = {
+			isa = PBXGroup;
+			children = (
+				B3B5EE8B2B199A11007CB725 /* FetchMissionListUseCase.swift */,
+				B3B5EE8D2B199A22007CB725 /* FetchMissionDetailUseCase.swift */,
+			);
+			path = "Use Case";
+			sourceTree = "<group>";
+		};
+		B3B5EE882B1999C1007CB725 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				B3B5EE892B1999D0007CB725 /* MissionService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,6 +294,9 @@
 				Base,
 			);
 			mainGroup = B3B5EE362B1973B6007CB725;
+			packageReferences = (
+				B3B5EE862B1999AE007CB725 /* XCRemoteSwiftPackageReference "apollo-ios" */,
+			);
 			productRefGroup = B3B5EE402B1973B6007CB725 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -257,8 +339,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3B5EE452B1973B6007CB725 /* ContentView.swift in Sources */,
+				B3B5EE452B1973B6007CB725 /* MainSpacexRavnView.swift in Sources */,
+				B3B5EE8C2B199A11007CB725 /* FetchMissionListUseCase.swift in Sources */,
+				B3B5EE752B197996007CB725 /* ListMissionsView.swift in Sources */,
+				B3B5EE8A2B1999D0007CB725 /* MissionService.swift in Sources */,
+				B3B5EE712B197695007CB725 /* MainCoordinator.swift in Sources */,
+				B3B5EE8E2B199A22007CB725 /* FetchMissionDetailUseCase.swift in Sources */,
 				B3B5EE432B1973B6007CB725 /* SpaceX_RavnApp.swift in Sources */,
+				B3B5EE852B198EAD007CB725 /* MissionListItemView.swift in Sources */,
+				B3B5EE782B1979B7007CB725 /* MissionDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,7 +436,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -404,7 +493,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -425,11 +514,11 @@
 				DEVELOPMENT_TEAM = HKA6PJ3AC9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SpaceX-Ravn/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -455,11 +544,11 @@
 				DEVELOPMENT_TEAM = HKA6PJ3AC9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SpaceX-Ravn/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -590,6 +679,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B3B5EE862B1999AE007CB725 /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apollographql/apollo-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = B3B5EE372B1973B6007CB725 /* Project object */;
 }

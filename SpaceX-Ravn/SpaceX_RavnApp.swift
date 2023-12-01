@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct SpaceX_RavnApp: App {
+    @ObservedObject var coordinator: MainCoordinator = MainCoordinator()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainSpacexRavnView()
+                .environmentObject(coordinator)
         }
     }
 }
