@@ -3,10 +3,29 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B382F2F32B1A329900920396 /* FullImageViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B382F2F22B1A329900920396 /* FullImageViewRepresentable.swift */; };
+		B382F2F52B1A4E2E00920396 /* YoutubeVideoViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B382F2F42B1A4E2E00920396 /* YoutubeVideoViewRepresentable.swift */; };
+		B382F3002B1A5DE300920396 /* LaunchList.graphql in Resources */ = {isa = PBXBuildFile; fileRef = B382F2FF2B1A5DE300920396 /* LaunchList.graphql */; };
+		B382F3022B1A5DF300920396 /* LaunchDetail.graphql in Resources */ = {isa = PBXBuildFile; fileRef = B382F3012B1A5DF300920396 /* LaunchDetail.graphql */; };
+		B382F30C2B1A6F5400920396 /* schema.graphqls in Resources */ = {isa = PBXBuildFile; fileRef = B382F30B2B1A6F5400920396 /* schema.graphqls */; };
+		B382F30F2B1A6FC500920396 /* SpaceXRavnAPI in Frameworks */ = {isa = PBXBuildFile; productRef = B382F30E2B1A6FC500920396 /* SpaceXRavnAPI */; };
+		B382F3112B1A700000920396 /* NetworkApolloSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B382F3102B1A700000920396 /* NetworkApolloSingleton.swift */; };
+		B382F3132B1A70BD00920396 /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = B382F3122B1A70BD00920396 /* Apollo */; };
+		B382F3172B1A745600920396 /* MissionServiceI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B382F3162B1A745600920396 /* MissionServiceI.swift */; };
+		B382F31A2B1A756B00920396 /* ListMissionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B382F3192B1A756B00920396 /* ListMissionViewModel.swift */; };
+		B382F31D2B1A76DE00920396 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B382F31C2B1A76DE00920396 /* NetworkError.swift */; };
+		B382F31F2B1A76F200920396 /* NetworkDataStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = B382F31E2B1A76F200920396 /* NetworkDataStatus.swift */; };
+		B382F3212B1A7ADF00920396 /* ApolloSQLite in Frameworks */ = {isa = PBXBuildFile; productRef = B382F3202B1A7ADF00920396 /* ApolloSQLite */; };
+		B382F3262B1A7F6600920396 /* CustomProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B382F3252B1A7F6600920396 /* CustomProgressView.swift */; };
+		B382F32E2B1A8D1400920396 /* EmptyDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B382F32D2B1A8D1400920396 /* EmptyDataView.swift */; };
+		B382F33B2B1A9C2100920396 /* InternetConnectionStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B382F33A2B1A9C2100920396 /* InternetConnectionStatusView.swift */; };
+		B382F33D2B1AA2E100920396 /* MissionDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B382F33C2B1AA2E100920396 /* MissionDetailViewModel.swift */; };
+		B382F3402B1AA5A700920396 /* Reachability in Frameworks */ = {isa = PBXBuildFile; productRef = B382F33F2B1AA5A700920396 /* Reachability */; };
+		B382F3432B1AA63700920396 /* RechabilityMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B382F3422B1AA63700920396 /* RechabilityMonitor.swift */; };
 		B3B5EE432B1973B6007CB725 /* SpaceX_RavnApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B5EE422B1973B6007CB725 /* SpaceX_RavnApp.swift */; };
 		B3B5EE452B1973B6007CB725 /* MainSpacexRavnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B5EE442B1973B6007CB725 /* MainSpacexRavnView.swift */; };
 		B3B5EE472B1973B8007CB725 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3B5EE462B1973B8007CB725 /* Assets.xcassets */; };
@@ -14,13 +33,10 @@
 		B3B5EE542B1973B8007CB725 /* SpaceX_RavnTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B5EE532B1973B8007CB725 /* SpaceX_RavnTests.swift */; };
 		B3B5EE5E2B1973B8007CB725 /* SpaceX_RavnUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B5EE5D2B1973B8007CB725 /* SpaceX_RavnUITests.swift */; };
 		B3B5EE602B1973B8007CB725 /* SpaceX_RavnUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B5EE5F2B1973B8007CB725 /* SpaceX_RavnUITestsLaunchTests.swift */; };
-		B3B5EE712B197695007CB725 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B5EE702B197695007CB725 /* MainCoordinator.swift */; };
 		B3B5EE752B197996007CB725 /* ListMissionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B5EE742B197996007CB725 /* ListMissionsView.swift */; };
 		B3B5EE782B1979B7007CB725 /* MissionDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B5EE772B1979B7007CB725 /* MissionDetailView.swift */; };
 		B3B5EE852B198EAD007CB725 /* MissionListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B5EE842B198EAD007CB725 /* MissionListItemView.swift */; };
 		B3B5EE8A2B1999D0007CB725 /* MissionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B5EE892B1999D0007CB725 /* MissionService.swift */; };
-		B3B5EE8C2B199A11007CB725 /* FetchMissionListUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B5EE8B2B199A11007CB725 /* FetchMissionListUseCase.swift */; };
-		B3B5EE8E2B199A22007CB725 /* FetchMissionDetailUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B5EE8D2B199A22007CB725 /* FetchMissionDetailUseCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +57,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B382F2F22B1A329900920396 /* FullImageViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullImageViewRepresentable.swift; sourceTree = "<group>"; };
+		B382F2F42B1A4E2E00920396 /* YoutubeVideoViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeVideoViewRepresentable.swift; sourceTree = "<group>"; };
+		B382F2FF2B1A5DE300920396 /* LaunchList.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = LaunchList.graphql; sourceTree = "<group>"; };
+		B382F3012B1A5DF300920396 /* LaunchDetail.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = LaunchDetail.graphql; sourceTree = "<group>"; };
+		B382F30B2B1A6F5400920396 /* schema.graphqls */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = schema.graphqls; sourceTree = "<group>"; };
+		B382F3102B1A700000920396 /* NetworkApolloSingleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkApolloSingleton.swift; sourceTree = "<group>"; };
+		B382F3162B1A745600920396 /* MissionServiceI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionServiceI.swift; sourceTree = "<group>"; };
+		B382F3192B1A756B00920396 /* ListMissionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListMissionViewModel.swift; sourceTree = "<group>"; };
+		B382F31C2B1A76DE00920396 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		B382F31E2B1A76F200920396 /* NetworkDataStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDataStatus.swift; sourceTree = "<group>"; };
+		B382F3252B1A7F6600920396 /* CustomProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomProgressView.swift; sourceTree = "<group>"; };
+		B382F32D2B1A8D1400920396 /* EmptyDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyDataView.swift; sourceTree = "<group>"; };
+		B382F33A2B1A9C2100920396 /* InternetConnectionStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetConnectionStatusView.swift; sourceTree = "<group>"; };
+		B382F33C2B1AA2E100920396 /* MissionDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionDetailViewModel.swift; sourceTree = "<group>"; };
+		B382F3422B1AA63700920396 /* RechabilityMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RechabilityMonitor.swift; sourceTree = "<group>"; };
 		B3B5EE3F2B1973B6007CB725 /* SpaceX-Ravn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SpaceX-Ravn.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3B5EE422B1973B6007CB725 /* SpaceX_RavnApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceX_RavnApp.swift; sourceTree = "<group>"; };
 		B3B5EE442B1973B6007CB725 /* MainSpacexRavnView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSpacexRavnView.swift; sourceTree = "<group>"; };
@@ -51,13 +82,10 @@
 		B3B5EE592B1973B8007CB725 /* SpaceX-RavnUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SpaceX-RavnUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3B5EE5D2B1973B8007CB725 /* SpaceX_RavnUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceX_RavnUITests.swift; sourceTree = "<group>"; };
 		B3B5EE5F2B1973B8007CB725 /* SpaceX_RavnUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceX_RavnUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		B3B5EE702B197695007CB725 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		B3B5EE742B197996007CB725 /* ListMissionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListMissionsView.swift; sourceTree = "<group>"; };
 		B3B5EE772B1979B7007CB725 /* MissionDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionDetailView.swift; sourceTree = "<group>"; };
 		B3B5EE842B198EAD007CB725 /* MissionListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionListItemView.swift; sourceTree = "<group>"; };
 		B3B5EE892B1999D0007CB725 /* MissionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionService.swift; sourceTree = "<group>"; };
-		B3B5EE8B2B199A11007CB725 /* FetchMissionListUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchMissionListUseCase.swift; sourceTree = "<group>"; };
-		B3B5EE8D2B199A22007CB725 /* FetchMissionDetailUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchMissionDetailUseCase.swift; sourceTree = "<group>"; };
 		B3B5EE8F2B19A541007CB725 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -66,6 +94,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B382F30F2B1A6FC500920396 /* SpaceXRavnAPI in Frameworks */,
+				B382F3402B1AA5A700920396 /* Reachability in Frameworks */,
+				B382F3132B1A70BD00920396 /* Apollo in Frameworks */,
+				B382F3212B1A7ADF00920396 /* ApolloSQLite in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +118,106 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B382F2ED2B1A266500920396 /* List Item View */ = {
+			isa = PBXGroup;
+			children = (
+				B3B5EE842B198EAD007CB725 /* MissionListItemView.swift */,
+			);
+			path = "List Item View";
+			sourceTree = "<group>";
+		};
+		B382F2EE2B1A2EF200920396 /* Dialog */ = {
+			isa = PBXGroup;
+			children = (
+				B382F2EF2B1A2EF800920396 /* Full Image View */,
+			);
+			path = Dialog;
+			sourceTree = "<group>";
+		};
+		B382F2EF2B1A2EF800920396 /* Full Image View */ = {
+			isa = PBXGroup;
+			children = (
+				B382F2F22B1A329900920396 /* FullImageViewRepresentable.swift */,
+			);
+			path = "Full Image View";
+			sourceTree = "<group>";
+		};
+		B382F2FC2B1A5DD400920396 /* graphql */ = {
+			isa = PBXGroup;
+			children = (
+				B382F30B2B1A6F5400920396 /* schema.graphqls */,
+				B382F2FF2B1A5DE300920396 /* LaunchList.graphql */,
+				B382F3012B1A5DF300920396 /* LaunchDetail.graphql */,
+			);
+			path = graphql;
+			sourceTree = "<group>";
+		};
+		B382F3082B1A6CEC00920396 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B382F3142B1A744000920396 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				B382F3192B1A756B00920396 /* ListMissionViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		B382F3152B1A744B00920396 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				B382F3162B1A745600920396 /* MissionServiceI.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		B382F3182B1A74A300920396 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B382F31B2B1A76CC00920396 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				B382F31C2B1A76DE00920396 /* NetworkError.swift */,
+				B382F31E2B1A76F200920396 /* NetworkDataStatus.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		B382F3242B1A7F4600920396 /* Helper Views */ = {
+			isa = PBXGroup;
+			children = (
+				B382F2F42B1A4E2E00920396 /* YoutubeVideoViewRepresentable.swift */,
+				B382F3252B1A7F6600920396 /* CustomProgressView.swift */,
+				B382F32D2B1A8D1400920396 /* EmptyDataView.swift */,
+				B382F33A2B1A9C2100920396 /* InternetConnectionStatusView.swift */,
+			);
+			path = "Helper Views";
+			sourceTree = "<group>";
+		};
+		B382F3272B1A7FE100920396 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				B382F33C2B1AA2E100920396 /* MissionDetailViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		B382F3412B1AA62700920396 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				B382F3422B1AA63700920396 /* RechabilityMonitor.swift */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
 		B3B5EE362B1973B6007CB725 = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +225,7 @@
 				B3B5EE522B1973B8007CB725 /* SpaceX-RavnTests */,
 				B3B5EE5C2B1973B8007CB725 /* SpaceX-RavnUITests */,
 				B3B5EE402B1973B6007CB725 /* Products */,
+				B382F3082B1A6CEC00920396 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,6 +242,7 @@
 		B3B5EE412B1973B6007CB725 /* SpaceX-Ravn */ = {
 			isa = PBXGroup;
 			children = (
+				B382F2FC2B1A5DD400920396 /* graphql */,
 				B3B5EE6E2B197668007CB725 /* Core */,
 				B3B5EE6D2B19762B007CB725 /* Ui */,
 				B3B5EE422B1973B6007CB725 /* SpaceX_RavnApp.swift */,
@@ -148,7 +282,8 @@
 		B3B5EE6D2B19762B007CB725 /* Ui */ = {
 			isa = PBXGroup;
 			children = (
-				B3B5EE6F2B197682007CB725 /* Coordinator */,
+				B382F3242B1A7F4600920396 /* Helper Views */,
+				B382F2EE2B1A2EF200920396 /* Dialog */,
 				B3B5EE762B1979A9007CB725 /* Mission Detail View */,
 				B3B5EE722B197979007CB725 /* List Missions View */,
 			);
@@ -158,25 +293,20 @@
 		B3B5EE6E2B197668007CB725 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				B382F3412B1AA62700920396 /* Reachability */,
+				B382F31B2B1A76CC00920396 /* Utilities */,
+				B382F3182B1A74A300920396 /* Model */,
 				B3B5EE882B1999C1007CB725 /* Service */,
-				B3B5EE872B1999BA007CB725 /* Use Case */,
 			);
 			path = Core;
-			sourceTree = "<group>";
-		};
-		B3B5EE6F2B197682007CB725 /* Coordinator */ = {
-			isa = PBXGroup;
-			children = (
-				B3B5EE702B197695007CB725 /* MainCoordinator.swift */,
-			);
-			path = Coordinator;
 			sourceTree = "<group>";
 		};
 		B3B5EE722B197979007CB725 /* List Missions View */ = {
 			isa = PBXGroup;
 			children = (
+				B382F3142B1A744000920396 /* View Model */,
+				B382F2ED2B1A266500920396 /* List Item View */,
 				B3B5EE742B197996007CB725 /* ListMissionsView.swift */,
-				B3B5EE842B198EAD007CB725 /* MissionListItemView.swift */,
 			);
 			path = "List Missions View";
 			sourceTree = "<group>";
@@ -184,24 +314,18 @@
 		B3B5EE762B1979A9007CB725 /* Mission Detail View */ = {
 			isa = PBXGroup;
 			children = (
+				B382F3272B1A7FE100920396 /* View Model */,
 				B3B5EE772B1979B7007CB725 /* MissionDetailView.swift */,
 			);
 			path = "Mission Detail View";
 			sourceTree = "<group>";
 		};
-		B3B5EE872B1999BA007CB725 /* Use Case */ = {
-			isa = PBXGroup;
-			children = (
-				B3B5EE8B2B199A11007CB725 /* FetchMissionListUseCase.swift */,
-				B3B5EE8D2B199A22007CB725 /* FetchMissionDetailUseCase.swift */,
-			);
-			path = "Use Case";
-			sourceTree = "<group>";
-		};
 		B3B5EE882B1999C1007CB725 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				B382F3152B1A744B00920396 /* Protocol */,
 				B3B5EE892B1999D0007CB725 /* MissionService.swift */,
+				B382F3102B1A700000920396 /* NetworkApolloSingleton.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -222,6 +346,12 @@
 			dependencies = (
 			);
 			name = "SpaceX-Ravn";
+			packageProductDependencies = (
+				B382F30E2B1A6FC500920396 /* SpaceXRavnAPI */,
+				B382F3122B1A70BD00920396 /* Apollo */,
+				B382F3202B1A7ADF00920396 /* ApolloSQLite */,
+				B382F33F2B1AA5A700920396 /* Reachability */,
+			);
 			productName = "SpaceX-Ravn";
 			productReference = B3B5EE3F2B1973B6007CB725 /* SpaceX-Ravn.app */;
 			productType = "com.apple.product-type.application";
@@ -296,6 +426,8 @@
 			mainGroup = B3B5EE362B1973B6007CB725;
 			packageReferences = (
 				B3B5EE862B1999AE007CB725 /* XCRemoteSwiftPackageReference "apollo-ios" */,
+				B382F30D2B1A6FC500920396 /* XCLocalSwiftPackageReference "SpaceXRavnAPI" */,
+				B382F33E2B1AA5A700920396 /* XCRemoteSwiftPackageReference "Reachability" */,
 			);
 			productRefGroup = B3B5EE402B1973B6007CB725 /* Products */;
 			projectDirPath = "";
@@ -314,6 +446,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3B5EE4A2B1973B8007CB725 /* Preview Assets.xcassets in Resources */,
+				B382F30C2B1A6F5400920396 /* schema.graphqls in Resources */,
+				B382F3022B1A5DF300920396 /* LaunchDetail.graphql in Resources */,
+				B382F3002B1A5DE300920396 /* LaunchList.graphql in Resources */,
 				B3B5EE472B1973B8007CB725 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -340,14 +475,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3B5EE452B1973B6007CB725 /* MainSpacexRavnView.swift in Sources */,
-				B3B5EE8C2B199A11007CB725 /* FetchMissionListUseCase.swift in Sources */,
+				B382F32E2B1A8D1400920396 /* EmptyDataView.swift in Sources */,
+				B382F31D2B1A76DE00920396 /* NetworkError.swift in Sources */,
+				B382F31F2B1A76F200920396 /* NetworkDataStatus.swift in Sources */,
+				B382F2F52B1A4E2E00920396 /* YoutubeVideoViewRepresentable.swift in Sources */,
 				B3B5EE752B197996007CB725 /* ListMissionsView.swift in Sources */,
+				B382F3262B1A7F6600920396 /* CustomProgressView.swift in Sources */,
+				B382F3172B1A745600920396 /* MissionServiceI.swift in Sources */,
+				B382F31A2B1A756B00920396 /* ListMissionViewModel.swift in Sources */,
 				B3B5EE8A2B1999D0007CB725 /* MissionService.swift in Sources */,
-				B3B5EE712B197695007CB725 /* MainCoordinator.swift in Sources */,
-				B3B5EE8E2B199A22007CB725 /* FetchMissionDetailUseCase.swift in Sources */,
+				B382F3112B1A700000920396 /* NetworkApolloSingleton.swift in Sources */,
+				B382F2F32B1A329900920396 /* FullImageViewRepresentable.swift in Sources */,
 				B3B5EE432B1973B6007CB725 /* SpaceX_RavnApp.swift in Sources */,
+				B382F3432B1AA63700920396 /* RechabilityMonitor.swift in Sources */,
+				B382F33D2B1AA2E100920396 /* MissionDetailViewModel.swift in Sources */,
 				B3B5EE852B198EAD007CB725 /* MissionListItemView.swift in Sources */,
 				B3B5EE782B1979B7007CB725 /* MissionDetailView.swift in Sources */,
+				B382F33B2B1A9C2100920396 /* InternetConnectionStatusView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -680,16 +824,53 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCLocalSwiftPackageReference section */
+		B382F30D2B1A6FC500920396 /* XCLocalSwiftPackageReference "SpaceXRavnAPI" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = SpaceXRavnAPI;
+		};
+/* End XCLocalSwiftPackageReference section */
+
 /* Begin XCRemoteSwiftPackageReference section */
+		B382F33E2B1AA5A700920396 /* XCRemoteSwiftPackageReference "Reachability" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ashleymills/Reachability.swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 		B3B5EE862B1999AE007CB725 /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/apollographql/apollo-ios";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.7.1;
+				kind = exactVersion;
+				version = 1.7.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B382F30E2B1A6FC500920396 /* SpaceXRavnAPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SpaceXRavnAPI;
+		};
+		B382F3122B1A70BD00920396 /* Apollo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B3B5EE862B1999AE007CB725 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = Apollo;
+		};
+		B382F3202B1A7ADF00920396 /* ApolloSQLite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B3B5EE862B1999AE007CB725 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = ApolloSQLite;
+		};
+		B382F33F2B1AA5A700920396 /* Reachability */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B382F33E2B1AA5A700920396 /* XCRemoteSwiftPackageReference "Reachability" */;
+			productName = Reachability;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B3B5EE372B1973B6007CB725 /* Project object */;
 }

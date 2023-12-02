@@ -5,8 +5,17 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/apollographql/apollo-ios",
       "state" : {
-        "revision" : "7e28eb75e9970edaba346a3c1eab1f8fc479a04d",
-        "version" : "1.7.1"
+        "revision" : "fdb97fe7016edc10dd217e530864dd3eee0f114b",
+        "version" : "1.7.0"
+      }
+    },
+    {
+      "identity" : "reachability.swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ashleymills/Reachability.swift",
+      "state" : {
+        "branch" : "master",
+        "revision" : "a81b7367f2c46875f29577e03a60c39cdfad0c8d"
       }
     },
     {
