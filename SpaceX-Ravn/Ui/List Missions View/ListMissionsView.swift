@@ -33,7 +33,7 @@ struct ListMissionsView: View {
                 }
                 .listStyle(.plain)
             } else {
-                EmptyDataView()
+                EmptyDataView(text: "No se han encontrado resultados...")
             }
             Spacer()
         }

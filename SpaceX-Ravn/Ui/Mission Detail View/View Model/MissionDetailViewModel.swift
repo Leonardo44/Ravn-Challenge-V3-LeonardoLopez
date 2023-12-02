@@ -14,7 +14,8 @@ protocol MissionDetailViewModelI: AnyObject {
     associatedtype DataStatus
     associatedtype Service
     
-    var detailLaunch: LaunchObject { get set }
+    var launchId: String { get set }
+    var detailLaunch: LaunchObject? { get set }
     var dataStatus: CurrentValueSubject<DataStatus, Never> { get set }
     var service: Service { get set }
     var subscriptions: Set<AnyCancellable> { get set }
@@ -24,16 +25,18 @@ protocol MissionDetailViewModelI: AnyObject {
 }
 
 class MissionDetailViewModel: MissionDetailViewModelI, ObservableObject {
-    typealias LaunchObject = LaunchesQuery.Data.Launch
+    typealias LaunchObject = LaunchQuery.Data.Launch
     typealias DataStatus = NetworkDataStatus
     typealias Service = MissionService
     
-    @Published var detailLaunch: LaunchObject
+    @Published var detailLaunch: LaunchObject?
+    var launchId: String
     var dataStatus: CurrentValueSubject<NetworkDataStatus, Never>
     var service: MissionService
     var subscriptions: Set<AnyCancellable>
     
-    init(detailLaunch: LaunchesQuery.Data.Launch, subscriptions: Set<AnyCancellable>, dataStatus: CurrentValueSubject<NetworkDataStatus, Never>, service: MissionService, textSearch: String) {
+    init(launchId: String, detailLaunch: LaunchQuery.Data.Launch?, subscriptions: Set<AnyCancellable>, dataStatus: CurrentValueSubject<NetworkDataStatus, Never>, service: MissionService) {
+        self.launchId = launchId
         self.detailLaunch = detailLaunch
         self.subscriptions = subscriptions
         self.dataStatus = dataStatus
@@ -48,22 +51,21 @@ class MissionDetailViewModel: MissionDetailViewModelI, ObservableObject {
     
     public func fetchDetail() {
         if dataStatus.value != .loading {
-//            dataStatus.send(.loading)
-//            
-//            service.fetchLauncList()
-//                .receive(on: DispatchQueue.main, options: .none)
-//                .sink(receiveCompletion: { [weak self] completion in
-//                    switch completion {
-//                    case .finished:
-//                        self?.dataStatus.send(.error)
-//                    case .failure(_):
-//                        self?.dataStatus.send(.error)
-//                    }
-//                }, receiveValue: { [weak self] data in
-//                    self?.launches = data
-//                    self?.originalList = data
-//                })
-//                .store(in: &subscriptions)
+            dataStatus.send(.loading)
+            
+            service.fetchLauncDetail(id: launchId)
+                .receive(on: DispatchQueue.main, options: .none)
+                .sink(receiveCompletion: { [weak self] completion in
+                    switch completion {
+                    case .finished:
+                        self?.dataStatus.send(.success)
+                    case .failure(_):
+                        self?.dataStatus.send(.error)
+                    }
+                }, receiveValue: { [weak self] data in
+                    self?.detailLaunch = data
+                })
+                .store(in: &subscriptions)
         }
     }
     

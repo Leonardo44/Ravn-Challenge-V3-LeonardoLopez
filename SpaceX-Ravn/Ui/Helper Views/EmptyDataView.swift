@@ -8,10 +8,12 @@
 import SwiftUI
 
 struct EmptyDataView: View {
+    public var text: String
+    
     var body: some View {
         HStack {
             Spacer()
-            Text("No se han encontrado resultados...")
+            Text(text)
                 .foregroundStyle(Color("TextMainColor"))
                 .font(.callout)
                 .fontWeight(.bold)
@@ -19,8 +21,4 @@ struct EmptyDataView: View {
         }
         .padding()
     }
-}
-
-#Preview {
-    EmptyDataView()
 }

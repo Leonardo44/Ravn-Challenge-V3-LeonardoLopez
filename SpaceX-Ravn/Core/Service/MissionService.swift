@@ -27,4 +27,21 @@ final class MissionService: MissionServiceI {
             }
         }
     }
+    
+    func fetchLauncDetail(id: String) -> Future<LaunchQuery.Data.Launch, NetworkError> {
+        return Future { promise in
+            NetworkApolloSingleton.shared.apollo.fetch(query: LaunchQuery(launchId: ID(stringLiteral: id))) { result in
+                switch result {
+                case .success(let graphQLResult):
+                    if let launch = graphQLResult.data?.launch {
+                        promise(Result.success(launch))
+                    } else {
+                        promise(Result.failure(.serverError))
+                    }
+                case .failure(_):
+                    promise(Result.failure(.serverError))
+                }
+            }
+        }
+    }
 }
