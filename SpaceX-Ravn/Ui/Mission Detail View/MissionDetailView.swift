@@ -14,6 +14,7 @@ struct MissionDetailView: View {
     var item: LaunchesQuery.Data.Launch
     @State private var loadingData: Bool = false
     @State private var alertErrorData: Bool = false
+    @State private var isPresentWebView = false
     @StateObject private var viewModel: MissionDetailViewModel
     
     init(item: LaunchesQuery.Data.Launch) {
@@ -61,6 +62,21 @@ struct MissionDetailView: View {
                             .fontWeight(.regular)
                         Spacer()
                     }
+                    
+                    if viewModel.detailLaunch?.links?.wikipedia != nil {
+                        HStack {
+                            Button(action: {
+                                isPresentWebView = true
+                            }, label: {
+                                Text(NSLocalizedString("MISSION_DETAIL_MORE_INFORMATION_BTN", comment: ""))
+                                    .foregroundStyle(Color.blue)
+                                    .font(.caption)
+                                    .fontWeight(.regular)
+                            })
+                            
+                            Spacer()
+                        }
+                    }
                 }.padding()
             }
         }
@@ -76,6 +92,12 @@ struct MissionDetailView: View {
         })
         .alert(NSLocalizedString("FETCH_DATA_ERROR", comment: ""), isPresented: $alertErrorData, actions: {
             Button(NSLocalizedString("FETCH_DATA_ERROR_BTN", comment: ""), role: .cancel) {
+            }
+        })
+        .fullScreenCover(isPresented: $isPresentWebView, content: {
+            if let link = viewModel.detailLaunch?.links?.wikipedia {
+                SafariWebView(url: URL(string: link)!)
+                    .ignoresSafeArea()
             }
         })
     }

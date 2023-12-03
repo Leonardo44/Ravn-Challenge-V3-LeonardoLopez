@@ -10,6 +10,9 @@ import SpaceXRavnAPI
 import Combine
 
 public protocol MissionServiceI {
-    func fetchLauncList() -> Future <[LaunchesQuery.Data.Launch], NetworkError>
-    func fetchLauncDetail(id: String) -> Future <LaunchQuery.Data.Launch, NetworkError>
+    associatedtype DataObjectFetchList
+    associatedtype DataObjectFetchDetail
+    
+    func fetchLauncList() -> Future <[DataObjectFetchList], NetworkError>
+    func fetchLauncDetail(id: String) -> Future <DataObjectFetchDetail, NetworkError>
 }

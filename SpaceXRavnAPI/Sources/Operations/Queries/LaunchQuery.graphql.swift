@@ -7,7 +7,7 @@ public class LaunchQuery: GraphQLQuery {
   public static let operationName: String = "Launch"
   public static let operationDocument: ApolloAPI.OperationDocument = .init(
     definition: .init(
-      #"query Launch($launchId: ID!) { launch(id: $launchId) { __typename id mission_name launch_date_utc launch_date_local details links { __typename video_link } } }"#
+      #"query Launch($launchId: ID!) { launch(id: $launchId) { __typename id mission_name launch_date_utc launch_date_local details links { __typename video_link wikipedia } } }"#
     ))
 
   public var launchId: ID
@@ -65,9 +65,11 @@ public class LaunchQuery: GraphQLQuery {
         public static var __selections: [ApolloAPI.Selection] { [
           .field("__typename", String.self),
           .field("video_link", String?.self),
+          .field("wikipedia", String?.self),
         ] }
 
         public var video_link: String? { __data["video_link"] }
+        public var wikipedia: String? { __data["wikipedia"] }
       }
     }
   }

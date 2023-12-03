@@ -7,6 +7,7 @@ query Launch($launchId: ID!) {
         details
         links {
             video_link
+            wikipedia
         }
     }
 }

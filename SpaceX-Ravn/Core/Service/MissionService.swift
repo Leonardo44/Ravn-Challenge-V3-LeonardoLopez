@@ -10,6 +10,9 @@ import SpaceXRavnAPI
 import Combine
 
 final class MissionService: MissionServiceI {
+    typealias DataObjectFetchList = LaunchesQuery.Data.Launch
+    typealias DataObjectFetchDetail = LaunchQuery.Data.Launch
+    
     static let shared = MissionService()
     
     private init() {
