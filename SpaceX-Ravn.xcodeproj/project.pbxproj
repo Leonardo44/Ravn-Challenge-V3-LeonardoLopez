@@ -37,6 +37,8 @@
 		B3B5EE782B1979B7007CB725 /* MissionDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B5EE772B1979B7007CB725 /* MissionDetailView.swift */; };
 		B3B5EE852B198EAD007CB725 /* MissionListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B5EE842B198EAD007CB725 /* MissionListItemView.swift */; };
 		B3B5EE8A2B1999D0007CB725 /* MissionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B5EE892B1999D0007CB725 /* MissionService.swift */; };
+		B3C2E2A52B1CEA7C001DB6AF /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = B3C2E2A42B1CEA7C001DB6AF /* Localizable.xcstrings */; };
+		B3C2E2A82B1CF7D9001DB6AF /* DateFormatter+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C2E2A72B1CF7D9001DB6AF /* DateFormatter+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +89,8 @@
 		B3B5EE842B198EAD007CB725 /* MissionListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionListItemView.swift; sourceTree = "<group>"; };
 		B3B5EE892B1999D0007CB725 /* MissionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionService.swift; sourceTree = "<group>"; };
 		B3B5EE8F2B19A541007CB725 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3C2E2A42B1CEA7C001DB6AF /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		B3C2E2A72B1CF7D9001DB6AF /* DateFormatter+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -293,6 +297,8 @@
 		B3B5EE6E2B197668007CB725 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				B3C2E2A62B1CF15D001DB6AF /* Extensions */,
+				B3C2E2A32B1CEA1E001DB6AF /* Localizable String */,
 				B382F3412B1AA62700920396 /* Reachability */,
 				B382F31B2B1A76CC00920396 /* Utilities */,
 				B382F3182B1A74A300920396 /* Model */,
@@ -328,6 +334,22 @@
 				B382F3102B1A700000920396 /* NetworkApolloSingleton.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		B3C2E2A32B1CEA1E001DB6AF /* Localizable String */ = {
+			isa = PBXGroup;
+			children = (
+				B3C2E2A42B1CEA7C001DB6AF /* Localizable.xcstrings */,
+			);
+			path = "Localizable String";
+			sourceTree = "<group>";
+		};
+		B3C2E2A62B1CF15D001DB6AF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B3C2E2A72B1CF7D9001DB6AF /* DateFormatter+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -422,6 +444,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"es-419",
 			);
 			mainGroup = B3B5EE362B1973B6007CB725;
 			packageReferences = (
@@ -447,6 +470,7 @@
 			files = (
 				B3B5EE4A2B1973B8007CB725 /* Preview Assets.xcassets in Resources */,
 				B382F30C2B1A6F5400920396 /* schema.graphqls in Resources */,
+				B3C2E2A52B1CEA7C001DB6AF /* Localizable.xcstrings in Resources */,
 				B382F3022B1A5DF300920396 /* LaunchDetail.graphql in Resources */,
 				B382F3002B1A5DE300920396 /* LaunchList.graphql in Resources */,
 				B3B5EE472B1973B8007CB725 /* Assets.xcassets in Resources */,
@@ -475,6 +499,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3B5EE452B1973B6007CB725 /* MainSpacexRavnView.swift in Sources */,
+				B3C2E2A82B1CF7D9001DB6AF /* DateFormatter+Extensions.swift in Sources */,
 				B382F32E2B1A8D1400920396 /* EmptyDataView.swift in Sources */,
 				B382F31D2B1A76DE00920396 /* NetworkError.swift in Sources */,
 				B382F31F2B1A76F200920396 /* NetworkDataStatus.swift in Sources */,

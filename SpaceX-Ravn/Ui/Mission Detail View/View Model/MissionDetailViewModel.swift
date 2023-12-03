@@ -19,6 +19,7 @@ protocol MissionDetailViewModelI: AnyObject {
     var dataStatus: CurrentValueSubject<DataStatus, Never> { get set }
     var service: Service { get set }
     var subscriptions: Set<AnyCancellable> { get set }
+    var dateFormatter: DateFormatter { get set }
     
     func fetchDetail()
     func extractYoutubeIdFromLink(link: String) -> String?
@@ -34,13 +35,15 @@ class MissionDetailViewModel: MissionDetailViewModelI, ObservableObject {
     var dataStatus: CurrentValueSubject<NetworkDataStatus, Never>
     var service: MissionService
     var subscriptions: Set<AnyCancellable>
+    var dateFormatter: DateFormatter
     
-    init(launchId: String, detailLaunch: LaunchQuery.Data.Launch?, subscriptions: Set<AnyCancellable>, dataStatus: CurrentValueSubject<NetworkDataStatus, Never>, service: MissionService) {
+    init(launchId: String, detailLaunch: LaunchQuery.Data.Launch?, subscriptions: Set<AnyCancellable>, dataStatus: CurrentValueSubject<NetworkDataStatus, Never>, service: MissionService, dateFormatter: DateFormatter) {
         self.launchId = launchId
         self.detailLaunch = detailLaunch
         self.subscriptions = subscriptions
         self.dataStatus = dataStatus
         self.service = service
+        self.dateFormatter = dateFormatter
     }
     
     deinit {

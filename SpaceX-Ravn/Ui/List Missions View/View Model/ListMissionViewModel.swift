@@ -20,6 +20,7 @@ protocol ListMissionViewModelI: AnyObject {
     var dataStatus: CurrentValueSubject<DataStatus, Never> { get set }
     var service: Service { get set }
     var subscriptions: Set<AnyCancellable> { get set }
+    var dateFormatter: DateFormatter { get set }
     
     func fetchList()
     func fetchElementByText(_ text: String)
@@ -36,14 +37,16 @@ class ListMissionViewModel: ListMissionViewModelI, ObservableObject {
     var dataStatus: CurrentValueSubject<NetworkDataStatus, Never>
     var service: MissionService
     var subscriptions: Set<AnyCancellable>
+    var dateFormatter: DateFormatter
     
-    init(launches: [LaunchesQuery.Data.Launch], subscriptions: Set<AnyCancellable>, dataStatus: CurrentValueSubject<NetworkDataStatus, Never>, service: MissionService, textSearch: String) {
+    init(launches: [LaunchesQuery.Data.Launch], subscriptions: Set<AnyCancellable>, dataStatus: CurrentValueSubject<NetworkDataStatus, Never>, service: MissionService, textSearch: String, dateFormatter: DateFormatter) {
         self.launches = launches
         self.originalList = launches
         self.subscriptions = subscriptions
         self.dataStatus = dataStatus
         self.service = service
         self.textSearch = textSearch
+        self.dateFormatter = dateFormatter
         
         $textSearch
             .removeDuplicates()

@@ -18,9 +18,15 @@ struct InternetConnectionStatusView: View {
                 Color.red
             }
             
-            HStack {
+            HStack(spacing: 16) {
                 Spacer()
-                Text(internetConnectionStatus ? "Internet" : "Not internet")
+                Image(systemName: internetConnectionStatus ? "wifi" : "wifi.slash")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .foregroundStyle(Color.white)
+                    .frame(width: 16, height: 16)
+                
+                Text(internetConnectionStatus ? NSLocalizedString("INTERNET_CONNECTION_SUCCESS", comment: "") : NSLocalizedString("INTERNET_CONNECTION_FAILED", comment: ""))
                     .foregroundStyle(Color.white)
                     .font(.callout)
                     .fontWeight(.bold)

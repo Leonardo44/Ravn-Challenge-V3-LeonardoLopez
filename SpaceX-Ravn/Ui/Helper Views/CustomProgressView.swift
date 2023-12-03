@@ -13,7 +13,7 @@ struct CustomProgressView: View {
             Spacer()
             VStack(spacing: 16) {
                 ProgressView()
-                Text("Cargando...")
+                Text(NSLocalizedString("LOADING_DATA_TEXT", comment: ""))
                     .foregroundStyle(Color("TextMainColor"))
                     .font(.callout)
                     .fontWeight(.bold)

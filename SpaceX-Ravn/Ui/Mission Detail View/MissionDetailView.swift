@@ -18,7 +18,7 @@ struct MissionDetailView: View {
     
     init(item: LaunchesQuery.Data.Launch) {
         self.item = item
-        _viewModel = StateObject(wrappedValue: MissionDetailViewModel(launchId: String(item.id ?? ""), detailLaunch: nil, subscriptions: Set<AnyCancellable>(), dataStatus: .init(.initialize), service: MissionService.shared))
+        _viewModel = StateObject(wrappedValue: MissionDetailViewModel(launchId: String(item.id ?? ""), detailLaunch: nil, subscriptions: Set<AnyCancellable>(), dataStatus: .init(.initialize), service: MissionService.shared, dateFormatter: DateFormatter(dateFormat: "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'", timeZone: TimeZone.current, locale: Locale(identifier: Locale.current.identifier))))
     }
     
     var body: some View {
@@ -31,7 +31,7 @@ struct MissionDetailView: View {
                         YoutubeVideoViewRepresentable(urlVideo: "https://www.youtube.com/embed/\(viewModel.extractYoutubeIdFromLink(link: link ) ?? "")")
                             .frame(height: 300)
                     } else {
-                        EmptyDataView(text: "Esta misión no tiene video...")
+                        EmptyDataView(text: NSLocalizedString("VIDEO_MISSION_NOT_FOUND", comment: ""))
                     }
                 }
                 
@@ -44,20 +44,14 @@ struct MissionDetailView: View {
                         Spacer()
                     }
                     
-                    HStack {
-                        Text("[1]")
-                            .foregroundStyle(Color("TextMainColor"))
-                            .font(.title2)
-                            .fontWeight(.semibold)
-                        Spacer()
-                    }
-                    
-                    HStack {
-                        Text("[1]")
-                            .foregroundStyle(Color("TextMainColor"))
-                            .font(.title2)
-                            .fontWeight(.semibold)
-                        Spacer()
+                    if let dateUTC = item.launch_date_utc, let date = viewModel.dateFormatter.utcToLocal(dateStr: dateUTC, abbreviation: "UTC", inputFormat: "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'", outputFormat: "EEE, MMM d, yyyy - h:mm a") {
+                        HStack {
+                            Text("\(NSLocalizedString("MISSION_RELEASE_DATE", comment: "")): \(date)")
+                                .foregroundStyle(Color("TextMainColor"))
+                                .font(.title2)
+                                .fontWeight(.semibold)
+                            Spacer()
+                        }
                     }
                     
                     HStack {
@@ -80,8 +74,8 @@ struct MissionDetailView: View {
             loadingData = value == .loading
             alertErrorData = value == .error
         })
-        .alert(Text("Data error"), isPresented: $alertErrorData, actions: {
-            Button("OK", role: .cancel) {
+        .alert(NSLocalizedString("FETCH_DATA_ERROR", comment: ""), isPresented: $alertErrorData, actions: {
+            Button(NSLocalizedString("FETCH_DATA_ERROR_BTN", comment: ""), role: .cancel) {
             }
         })
     }

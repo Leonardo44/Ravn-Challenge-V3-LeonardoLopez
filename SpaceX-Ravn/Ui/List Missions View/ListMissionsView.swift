@@ -11,7 +11,7 @@ import Combine
 struct ListMissionsView: View {
     @State private var loadingData: Bool = false
     @State private var alertErrorData: Bool = false
-    @StateObject var viewModel = ListMissionViewModel(launches: [], subscriptions: Set<AnyCancellable>(), dataStatus: .init(.initialize), service: MissionService.shared, textSearch: "")
+    @StateObject var viewModel = ListMissionViewModel(launches: [], subscriptions: Set<AnyCancellable>(), dataStatus: .init(.initialize), service: MissionService.shared, textSearch: "", dateFormatter: DateFormatter(dateFormat: "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'", timeZone: TimeZone.current, locale: Locale(identifier: Locale.current.identifier)))
     
     var body: some View {
         VStack {
@@ -25,19 +25,18 @@ struct ListMissionsView: View {
                         NavigationLink(destination: {
                             MissionDetailView(item: launch)
                         }, label: {
-                            MissionListItemView(item: launch)
-                                .frame(height: 104)
+                            MissionListItemView(item: launch, dateFormatter: viewModel.dateFormatter)
                         })
                         .listRowBackground(Color("AppBackground"))
                     }
                 }
                 .listStyle(.plain)
             } else {
-                EmptyDataView(text: "No se han encontrado resultados...")
+                EmptyDataView(text: NSLocalizedString("EMPTY_DATA_ERROR", comment: ""))
             }
             Spacer()
         }
-        .navigationTitle("Misiones")
+        .navigationTitle(NSLocalizedString("MISSION_LIST_VIEW", comment: ""))
         .searchable(text: $viewModel.textSearch)
         .navigationBarTitleDisplayMode(.inline)
         .onAppear {
@@ -47,8 +46,8 @@ struct ListMissionsView: View {
             loadingData = value == .loading
             alertErrorData = value == .error
         })
-        .alert(Text("Data error"), isPresented: $alertErrorData, actions: {
-            Button("OK", role: .cancel) {
+        .alert(NSLocalizedString("FETCH_DATA_ERROR", comment: ""), isPresented: $alertErrorData, actions: {
+            Button(NSLocalizedString("FETCH_DATA_ERROR_BTN", comment: ""), role: .cancel) {
             }
         })
     }
