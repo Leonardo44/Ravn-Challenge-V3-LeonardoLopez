@@ -77,14 +77,22 @@ struct MissionDetailView: View {
                             Spacer()
                         }
                     }
-                }.padding()
+                }
+                .padding()
             }
         }
+        .accessibilityIdentifier("mission_detail_view")
         .background(Color("AppBackground"))
         .navigationTitle(item.mission_name ?? "")
         .navigationBarTitleDisplayMode(.inline)
         .onAppear {
             viewModel.fetchDetail()
+            
+            if ProcessInfo.processInfo.arguments.contains("isRunningUITests") {
+                #if DEBUG
+                    print("UI Testing is in progress")
+                #endif
+            }
         }
         .onReceive(viewModel.dataStatus, perform: { value in
             loadingData = value == .loading

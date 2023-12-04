@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B308A0872B1E1DA300F442E9 /* MockMissionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B308A0862B1E1DA300F442E9 /* MockMissionService.swift */; };
+		B308A0892B1E5EE600F442E9 /* SpaceX_RavnUITestsMainListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B308A0882B1E5EE600F442E9 /* SpaceX_RavnUITestsMainListTests.swift */; };
 		B382F2F32B1A329900920396 /* FullImageViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B382F2F22B1A329900920396 /* FullImageViewRepresentable.swift */; };
 		B382F2F52B1A4E2E00920396 /* YoutubeVideoViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B382F2F42B1A4E2E00920396 /* YoutubeVideoViewRepresentable.swift */; };
 		B382F3002B1A5DE300920396 /* LaunchList.graphql in Resources */ = {isa = PBXBuildFile; fileRef = B382F2FF2B1A5DE300920396 /* LaunchList.graphql */; };
@@ -65,6 +66,7 @@
 
 /* Begin PBXFileReference section */
 		B308A0862B1E1DA300F442E9 /* MockMissionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockMissionService.swift; sourceTree = "<group>"; };
+		B308A0882B1E5EE600F442E9 /* SpaceX_RavnUITestsMainListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceX_RavnUITestsMainListTests.swift; sourceTree = "<group>"; };
 		B382F2F22B1A329900920396 /* FullImageViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullImageViewRepresentable.swift; sourceTree = "<group>"; };
 		B382F2F42B1A4E2E00920396 /* YoutubeVideoViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeVideoViewRepresentable.swift; sourceTree = "<group>"; };
 		B382F2FF2B1A5DE300920396 /* LaunchList.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = LaunchList.graphql; sourceTree = "<group>"; };
@@ -301,6 +303,7 @@
 			children = (
 				B3B5EE5D2B1973B8007CB725 /* SpaceX_RavnUITests.swift */,
 				B3B5EE5F2B1973B8007CB725 /* SpaceX_RavnUITestsLaunchTests.swift */,
+				B308A0882B1E5EE600F442E9 /* SpaceX_RavnUITestsMainListTests.swift */,
 			);
 			path = "SpaceX-RavnUITests";
 			sourceTree = "<group>";
@@ -568,6 +571,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3B5EE5E2B1973B8007CB725 /* SpaceX_RavnUITests.swift in Sources */,
+				B308A0892B1E5EE600F442E9 /* SpaceX_RavnUITestsMainListTests.swift in Sources */,
 				B3B5EE602B1973B8007CB725 /* SpaceX_RavnUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

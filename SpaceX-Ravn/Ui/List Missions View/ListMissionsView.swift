@@ -19,20 +19,25 @@ struct ListMissionsView: View {
                 CustomProgressView()
             }
             
-            if !viewModel.launches.isEmpty && loadingData == false {
+            if !viewModel.launches.isEmpty {
                 List {
                     ForEach(viewModel.launches, id: \.self) { launch in
                         NavigationLink(destination: {
                             MissionDetailView(item: launch)
                         }, label: {
                             MissionListItemView(item: launch, dateFormatter: viewModel.dateFormatter)
+                                .accessibilityIdentifier("launches_query_list_item_\(launch.id ?? "")")
                         })
                         .listRowBackground(Color("AppBackground"))
                     }
                 }
                 .listStyle(.plain)
+                .accessibilityIdentifier("launches_query_list")
             } else {
-                EmptyDataView(text: NSLocalizedString("EMPTY_DATA_ERROR", comment: ""))
+                if loadingData == false {
+                    EmptyDataView(text: NSLocalizedString("EMPTY_DATA_ERROR", comment: ""))
+                        .accessibilityIdentifier("empty_view_list_mission_view")
+                }
             }
             Spacer()
         }
@@ -41,6 +46,12 @@ struct ListMissionsView: View {
         .navigationBarTitleDisplayMode(.inline)
         .onAppear {
             viewModel.fetchList()
+            
+            if ProcessInfo.processInfo.arguments.contains("isRunningUITests") {
+                #if DEBUG
+                    print("UI Testing is in progress")
+                #endif
+            }
         }
         .onReceive(viewModel.dataStatus, perform: { value in
             loadingData = value == .loading
