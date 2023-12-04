@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B308A0872B1E1DA300F442E9 /* MockMissionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B308A0862B1E1DA300F442E9 /* MockMissionService.swift */; };
 		B382F2F32B1A329900920396 /* FullImageViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B382F2F22B1A329900920396 /* FullImageViewRepresentable.swift */; };
 		B382F2F52B1A4E2E00920396 /* YoutubeVideoViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B382F2F42B1A4E2E00920396 /* YoutubeVideoViewRepresentable.swift */; };
 		B382F3002B1A5DE300920396 /* LaunchList.graphql in Resources */ = {isa = PBXBuildFile; fileRef = B382F2FF2B1A5DE300920396 /* LaunchList.graphql */; };
@@ -40,6 +41,9 @@
 		B3C2E2A52B1CEA7C001DB6AF /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = B3C2E2A42B1CEA7C001DB6AF /* Localizable.xcstrings */; };
 		B3C2E2A82B1CF7D9001DB6AF /* DateFormatter+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C2E2A72B1CF7D9001DB6AF /* DateFormatter+Extensions.swift */; };
 		B3C2E2AB2B1D03E4001DB6AF /* SafariWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C2E2AA2B1D03E4001DB6AF /* SafariWebView.swift */; };
+		B3C2E2AF2B1D27C0001DB6AF /* SpaceX_RavnTests_MissionServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C2E2AE2B1D27C0001DB6AF /* SpaceX_RavnTests_MissionServiceTests.swift */; };
+		B3C2E2B12B1D29E6001DB6AF /* ApolloTestSupport in Frameworks */ = {isa = PBXBuildFile; productRef = B3C2E2B02B1D29E6001DB6AF /* ApolloTestSupport */; };
+		B3C2E2B32B1D40E1001DB6AF /* launch_list.json in Resources */ = {isa = PBXBuildFile; fileRef = B3C2E2B22B1D40E1001DB6AF /* launch_list.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +64,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B308A0862B1E1DA300F442E9 /* MockMissionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockMissionService.swift; sourceTree = "<group>"; };
 		B382F2F22B1A329900920396 /* FullImageViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullImageViewRepresentable.swift; sourceTree = "<group>"; };
 		B382F2F42B1A4E2E00920396 /* YoutubeVideoViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeVideoViewRepresentable.swift; sourceTree = "<group>"; };
 		B382F2FF2B1A5DE300920396 /* LaunchList.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = LaunchList.graphql; sourceTree = "<group>"; };
@@ -93,6 +98,8 @@
 		B3C2E2A42B1CEA7C001DB6AF /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		B3C2E2A72B1CF7D9001DB6AF /* DateFormatter+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Extensions.swift"; sourceTree = "<group>"; };
 		B3C2E2AA2B1D03E4001DB6AF /* SafariWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebView.swift; sourceTree = "<group>"; };
+		B3C2E2AE2B1D27C0001DB6AF /* SpaceX_RavnTests_MissionServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceX_RavnTests_MissionServiceTests.swift; sourceTree = "<group>"; };
+		B3C2E2B22B1D40E1001DB6AF /* launch_list.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = launch_list.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +108,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B382F30F2B1A6FC500920396 /* SpaceXRavnAPI in Frameworks */,
+				B3C2E2B12B1D29E6001DB6AF /* ApolloTestSupport in Frameworks */,
 				B382F3402B1AA5A700920396 /* Reachability in Frameworks */,
 				B382F3132B1A70BD00920396 /* Apollo in Frameworks */,
 				B382F3212B1A7ADF00920396 /* ApolloSQLite in Frameworks */,
@@ -124,6 +132,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B308A0842B1E1D6500F442E9 /* Mock Data */ = {
+			isa = PBXGroup;
+			children = (
+				B3C2E2B22B1D40E1001DB6AF /* launch_list.json */,
+			);
+			path = "Mock Data";
+			sourceTree = "<group>";
+		};
+		B308A0852B1E1D9200F442E9 /* Mock Service */ = {
+			isa = PBXGroup;
+			children = (
+				B308A0862B1E1DA300F442E9 /* MockMissionService.swift */,
+			);
+			path = "Mock Service";
+			sourceTree = "<group>";
+		};
 		B382F2ED2B1A266500920396 /* List Item View */ = {
 			isa = PBXGroup;
 			children = (
@@ -179,13 +203,6 @@
 				B382F3162B1A745600920396 /* MissionServiceI.swift */,
 			);
 			path = Protocol;
-			sourceTree = "<group>";
-		};
-		B382F3182B1A74A300920396 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		B382F31B2B1A76CC00920396 /* Utilities */ = {
@@ -271,7 +288,10 @@
 		B3B5EE522B1973B8007CB725 /* SpaceX-RavnTests */ = {
 			isa = PBXGroup;
 			children = (
+				B308A0852B1E1D9200F442E9 /* Mock Service */,
+				B308A0842B1E1D6500F442E9 /* Mock Data */,
 				B3B5EE532B1973B8007CB725 /* SpaceX_RavnTests.swift */,
+				B3C2E2AE2B1D27C0001DB6AF /* SpaceX_RavnTests_MissionServiceTests.swift */,
 			);
 			path = "SpaceX-RavnTests";
 			sourceTree = "<group>";
@@ -303,7 +323,6 @@
 				B3C2E2A32B1CEA1E001DB6AF /* Localizable String */,
 				B382F3412B1AA62700920396 /* Reachability */,
 				B382F31B2B1A76CC00920396 /* Utilities */,
-				B382F3182B1A74A300920396 /* Model */,
 				B3B5EE882B1999C1007CB725 /* Service */,
 			);
 			path = Core;
@@ -384,6 +403,7 @@
 				B382F3122B1A70BD00920396 /* Apollo */,
 				B382F3202B1A7ADF00920396 /* ApolloSQLite */,
 				B382F33F2B1AA5A700920396 /* Reachability */,
+				B3C2E2B02B1D29E6001DB6AF /* ApolloTestSupport */,
 			);
 			productName = "SpaceX-Ravn";
 			productReference = B3B5EE3F2B1973B6007CB725 /* SpaceX-Ravn.app */;
@@ -492,6 +512,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3C2E2B32B1D40E1001DB6AF /* launch_list.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -537,6 +558,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3B5EE542B1973B8007CB725 /* SpaceX_RavnTests.swift in Sources */,
+				B308A0872B1E1DA300F442E9 /* MockMissionService.swift in Sources */,
+				B3C2E2AF2B1D27C0001DB6AF /* SpaceX_RavnTests_MissionServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -753,7 +776,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = HKA6PJ3AC9;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.lopezleo.SpaceX-RavnTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -773,7 +796,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = HKA6PJ3AC9;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.lopezleo.SpaceX-RavnTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -906,6 +929,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = B382F33E2B1AA5A700920396 /* XCRemoteSwiftPackageReference "Reachability" */;
 			productName = Reachability;
+		};
+		B3C2E2B02B1D29E6001DB6AF /* ApolloTestSupport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B3B5EE862B1999AE007CB725 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = ApolloTestSupport;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -10,4 +10,5 @@ import Foundation
 public enum NetworkError: Error {
     case badURL
     case serverError
+    case dataNotFound
 }
