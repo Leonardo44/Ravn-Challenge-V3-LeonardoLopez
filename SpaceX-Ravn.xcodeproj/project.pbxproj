@@ -311,6 +311,7 @@
 		B3B5EE6D2B19762B007CB725 /* Ui */ = {
 			isa = PBXGroup;
 			children = (
+				B3C2E2A32B1CEA1E001DB6AF /* Localizable String */,
 				B382F3242B1A7F4600920396 /* Helper Views */,
 				B382F2EE2B1A2EF200920396 /* Dialog */,
 				B3B5EE762B1979A9007CB725 /* Mission Detail View */,
@@ -323,7 +324,6 @@
 			isa = PBXGroup;
 			children = (
 				B3C2E2A62B1CF15D001DB6AF /* Extensions */,
-				B3C2E2A32B1CEA1E001DB6AF /* Localizable String */,
 				B382F3412B1AA62700920396 /* Reachability */,
 				B382F31B2B1A76CC00920396 /* Utilities */,
 				B3B5EE882B1999C1007CB725 /* Service */,
