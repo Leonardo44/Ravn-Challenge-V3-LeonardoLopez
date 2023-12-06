@@ -23,6 +23,17 @@ In the UI folder you can find all the views and elements (such as the string in 
 ## Setup/Running instructions
 
 ## Images and gifs of application running
+### Images/screenshots
+![List missions](/readme_resources/img_1.jpg "List missions.")
+![Detail of mission](/readme_resources/img_2.PNG "Detail of mission.")
+![Search text.](/readme_resources/img_3.PNG "Search text.")
+
+### Gifs
+![List missions](/readme_resources/gif_1.jpg "List missions.")
+![Detail of mission](/readme_resources/gif_2.PNG "Detail of mission.")
+![Search text.](/readme_resources/gif_3.PNG "Search text.")
+
+### Gifs
 
 ## Technologies used
 1. SwiftUI
