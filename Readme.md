@@ -30,7 +30,7 @@ In the UI folder you can find all the views and elements (such as the string in 
     4.  SpaceXRavnAPI. It is a local package located in this repository.
         1. Open window to add swift package manager.
         2. Tap button "Add Local..."
-        3. Search folder "SpaceXRavnAPI".
+        3. Find the "SpaceXRavnAPI" folder..
         4. Open and wait for the package to load.
 
 ## Images and gifs of application running
