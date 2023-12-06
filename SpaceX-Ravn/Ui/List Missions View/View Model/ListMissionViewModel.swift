@@ -50,7 +50,7 @@ class ListMissionViewModel: ListMissionViewModelI, ObservableObject {
         
         $textSearch
             .removeDuplicates()
-            .debounce(for: .seconds(1), scheduler: DispatchQueue.main)
+            .debounce(for: .seconds(0.7), scheduler: DispatchQueue.main)
             .sink(receiveValue: { [weak self] value in
                 if !value.lowercased().trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
                     self?.fetchElementByText(value.lowercased())
